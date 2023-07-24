@@ -1,16 +1,11 @@
 import openai
 
 
-def main():
+def chatgpt():
     # https://platform.openai.com/account/api-keysで設定したAPIキー
-    openai.api_key = "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"
+    openai.api_key = "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"
     amount_tokens = 0
     chat = []
-
-    setting = input("ChatGPTに設定を加えしますか？y/n\n")
-    if setting == "y" or setting == "Y":
-        content = input("内容を入力してください。\n")
-        chat.append({"role": "system", "content": content})
 
     print("チャットを開始します。qまたはquitで終了します。")
     print("_"*50)
@@ -38,4 +33,4 @@ def main():
         print(msg)
         chat.append({"role": "assistant", "content": msg})
 
-chat = main()        
+chat = chatgpt()        
