@@ -3,7 +3,7 @@ import openai
 
 def chatgpt():
     # https://platform.openai.com/account/api-keysで設定したAPIキー
-    openai.api_key = "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"
+    openai.api_key = "your_api_key"
     amount_tokens = 0
     chat = []
 
